@@ -1,3 +1,4 @@
+set "CMAKE_GENERATOR=NMake Makefiles"
 cmake.exe -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$PREFIX CMakeLists.txt
 if errorlevel 1 exit /b 1
 cmake.exe --build . --config Release
