@@ -19,9 +19,12 @@ requirements:
     - cmake
     - make  # [not win]
     - openmp  # [not aarch64 and not ppc64le]
+    - libgomp  # [linux]
   host:
+    - libgomp  # [linux]
     - openmp  # [not aarch64 and not ppc64le]
   run:
+    - libgomp  # [linux]
     - openmp  # [not aarch64 and not ppc64le]
     - llvm-openmp  # [osx]
     - _openmp_mutex  # [linux]
